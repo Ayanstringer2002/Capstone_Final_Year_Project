@@ -1,0 +1,46 @@
+
+---
+
+#  `.gitignore`
+
+```gitignore
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment
+venv/
+env/
+
+# Environment variables
+.env
+
+# Database
+*.db
+*.sqlite3
+
+# Streamlit
+.streamlit/
+
+# Logs
+*.log
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Temporary files
+*.tmp
+*.bak
+
+# Build files
+dist/
+build/
