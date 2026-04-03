@@ -49,8 +49,6 @@ This application helps users track expenses, plan budgets, monitor EMIs, and get
 ---
 
 
----
-
 ## ⚙️ Installation & Setup
 
 ###  Clone the repository
@@ -81,6 +79,20 @@ API_KEY=your_api_key_here
 ```bash
 streamlit run app.py
 ```
+
+## Future Improvements
+- 🔗 Bank API integration
+- 📱 Mobile responsive UI
+- ☁️ Cloud deployment
+
+## Members 
+- Tanweer Iqbal
+- Aditya Vikram singh
+- Kamal Yadav
+- Ayan Ahmad
+- Saurabh Yadav
+
+
 
 
 
