@@ -86,7 +86,18 @@ This application helps users track expenses, plan budgets, monitor EMIs, and get
 - **Local**: Use the run command above
 - **AI Features**: Add `GROQ_API_KEY` to Streamlit Cloud secrets for deployment
 
+### CI/CD Pipeline
+
+This project includes GitHub Actions for automated testing:
+
+- **Automated Tests**: Runs on every push/PR to main branch
+- **Code Quality**: Checks formatting, linting, and import sorting
+- **Dependency Checks**: Validates all required packages
+- **Import Tests**: Ensures all modules load correctly
+
 ---
+
+## 📁 Project Structure
 
 ## 📁 Project Structure
 
