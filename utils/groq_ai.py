@@ -10,10 +10,14 @@ MODEL_NAME = "llama-3.1-8b-instant"
 try:
     from groq import Groq
 
-    client = Groq(api_key=os.getenv("GROQ_API_KEY"))
-except ModuleNotFoundError as e:
-    # Deployment may not have groq installed yet. Keep app operational.
-    print("WARNING: groq dependency is missing. AI features are disabled.", e)
+    api_key = os.getenv("GROQ_API_KEY")
+    if api_key:
+        client = Groq(api_key=api_key)
+    else:
+        print("WARNING: GROQ_API_KEY not found. AI features are disabled.")
+except (ModuleNotFoundError, Exception) as e:
+    # Deployment may not have groq installed yet or API key missing. Keep app operational.
+    print("WARNING: groq dependency is missing or API key not set. AI features are disabled.", e)
 
 
 def get_financial_advice(user_message, context=""):
