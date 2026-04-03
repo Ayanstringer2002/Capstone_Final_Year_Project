@@ -48,6 +48,72 @@ This application helps users track expenses, plan budgets, monitor EMIs, and get
 
 ---
 
+## 📋 Setup Instructions
+
+### Prerequisites
+- Python 3.8+
+- Git
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Ayanstringer2002/Capstone_Final_Year_Project.git
+   cd Capstone_Final_Year_Project
+   ```
+
+2. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **For AI Features (Optional)**
+   - Get a free Groq API key from [https://console.groq.com/keys](https://console.groq.com/keys)
+   - Create a `.env` file in the project root:
+     ```
+     GROQ_API_KEY=your_api_key_here
+     ```
+   - Or set environment variable: `export GROQ_API_KEY=your_key`
+
+4. **Run the application**
+   ```bash
+   streamlit run app.py
+   ```
+
+### Deployment
+
+- **Streamlit Cloud**: Connect your GitHub repo and deploy
+- **Local**: Use the run command above
+- **AI Features**: Add `GROQ_API_KEY` to Streamlit Cloud secrets for deployment
+
+---
+
+## 📁 Project Structure
+
+```
+├── app.py                 # Main application
+├── requirements.txt       # Python dependencies
+├── assets/
+│   └── style.css         # Custom styling
+├── database/
+│   └── db.py            # Database operations
+├── pages/                # Streamlit pages
+│   ├── 1_Login.py
+│   ├── 2_Expense_Tracker.py
+│   ├── 3_Budget_Planner.py
+│   ├── 4_EMI_Tracker.py
+│   ├── 5_Reports_Dashboard.py
+│   └── 6_AI_Financial_Advisor.py
+└── utils/                # Utility modules
+    ├── ai_budget.py
+    ├── alerts.py
+    ├── auth.py
+    ├── groq_ai.py
+    └── helpers.py
+```
+
+---
+
 
 ## ⚙️ Installation & Setup
 
