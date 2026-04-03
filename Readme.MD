@@ -148,6 +148,24 @@ pip install -r requirements.txt
 
 ```
 ## Setup environment variables
+
+Create a `.env` file in the root directory and add your API keys:
+
+```
+GROQ_API_KEY=your_groq_api_key_here
+```
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions! This project uses GitHub Actions for CI/CD.
+
+- **CI/CD Status**: Check the Actions tab for pipeline status
+- **Tests**: All changes must pass automated tests
+- **Code Style**: Follow PEP 8 and use Black for formatting
+
+---
 ```bash
 API_KEY=your_api_key_here
 ```
